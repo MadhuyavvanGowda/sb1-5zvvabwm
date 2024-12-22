@@ -1,0 +1,39 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Healthcare App" class="bg-[#007BFF] text-white" />
+    
+    <ScrollView>
+        <StackLayout class="p-4">
+            <!-- Search Bar -->
+            <SearchBar hint="Search medicines, tests, hospitals..." class="search-bar" />
+            
+            <!-- Emergency Button -->
+            <Button text="🚑 EMERGENCY" tap="{{ onEmergency }}" class="emergency-button" />
+            
+            <!-- Quick Access Services -->
+            <GridLayout rows="auto, auto" columns="*, *" class="mt-4">
+                <Button text="💊 Medicine Delivery" tap="{{ onMedicineDelivery }}" 
+                        class="action-button" row="0" col="0" />
+                <Button text="👨‍⚕️ Doctor Consultation" tap="{{ onDoctorConsultation }}" 
+                        class="action-button" row="0" col="1" />
+                <Button text="🔬 Lab Tests" tap="{{ onLabTests }}" 
+                        class="action-button" row="1" col="0" />
+                <Button text="🏥 Nearby Hospitals" tap="{{ onNearbyHospitals }}" 
+                        class="action-button" row="1" col="1" />
+            </GridLayout>
+            
+            <!-- User Profile Section -->
+            <StackLayout class="bg-[#F5F5F5] p-4 rounded-lg mt-4">
+                <Label text="My Health Profile" class="text-xl font-bold mb-2" />
+                <Button text="📋 Medical History" tap="{{ onMedicalHistory }}" class="action-button" />
+                <Button text="📄 Reports & Prescriptions" tap="{{ onReports }}" class="action-button" />
+                <Button text="💳 Payment Options" tap="{{ onPaymentOptions }}" class="action-button" />
+            </StackLayout>
+            
+            <!-- Feedback Section -->
+            <StackLayout class="mt-4">
+                <Label text="Your Feedback Matters" class="text-lg font-bold mb-2" />
+                <Button text="⭐ Rate Our Services" tap="{{ onFeedback }}" class="action-button" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.action-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12;
+  border-radius: 8;
+  margin: 8;
+}
+
+.emergency-button {
+  background-color: #FF9800;
+  color: white;
+  padding: 16;
+  border-radius: 8;
+  margin: 8;
+}
+
+.search-bar {
+  background-color: #F5F5F5;
+  padding: 12;
+  border-radius: 20;
+  margin: 8;
+}
